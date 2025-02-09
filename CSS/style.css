@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.container .title {
+    background-color: #df993e;
+    color: black;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.container .title span {
+    color: #ffffff;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    background-color: #df993e;
+    float: left;
+    margin: 5px;
+    color: black;
+    font-size: 80px;
+    border-radius: 3px;
+}
+
+.square:hover {
+    background-color: #ffb95e;
+}
+.square:active {
+    background-color: #ffce8e;
+}
