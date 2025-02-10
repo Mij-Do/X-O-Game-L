@@ -1,7 +1,7 @@
 let title = document.querySelector(".title");
 let turn = 'x';
 let squares = [];
-let tmp;
+
 
 function winner (num1, num2, num3) {
     title.innerHTML = `${squares[num1]} Winner`;
@@ -21,7 +21,6 @@ function winner (num1, num2, num3) {
 function gameLogic () {
     for (let i = 1; i < 10; i++) {
         squares[i] = document.getElementById('item' + i).innerHTML;
-        tmp = i;
     }
 
     if (squares[1] == squares[2] && squares[2] == squares[3] && squares[1] != '') {
@@ -40,7 +39,7 @@ function gameLogic () {
         winner(1,5,9);
     } else if (squares[3] == squares[5] && squares[5] == squares[7] && squares[5] != '') {
         winner(3,5,7);
-    } else if (squares[tmp] != '') {
+    } else if (!squares.includes('')) {
         title.innerHTML = "Draw";
         setInterval (function () {
             title.innerHTML += ".";
